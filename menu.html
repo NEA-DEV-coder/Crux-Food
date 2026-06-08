@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu – Crux Food</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="logo">Crux<span>Food</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">Explore ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html#popular">🍽️ Popular Dishes</a></li>
+          <li><a href="index.html#how-it-works">🔍 How It Works</a></li>
+          <li><a href="index.html#testimonials">💬 Testimonials</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MENU HERO -->
+  <div class="menu-hero">
+    <h1>Our Menu</h1>
+    <p>Explore our wide selection of freshly prepared dishes</p>
+  </div>
+
+  <!-- MENU SECTION -->
+  <section>
+    <!-- FILTER -->
+    <div class="filter-bar" data-animate="fade-up">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="starters">Starters</button>
+      <button class="filter-btn" data-filter="mains">Mains</button>
+      <button class="filter-btn" data-filter="pizza">Pizza</button>
+      <button class="filter-btn" data-filter="salads">Salads</button>
+      <button class="filter-btn" data-filter="desserts">Desserts</button>
+      <button class="filter-btn" data-filter="drinks">Drinks</button>
+    </div>
+
+    <!-- CARDS -->
+    <div class="menu-grid" data-stagger>
+
+      <!-- Starters -->
+      <div class="menu-card" data-cat="starters">
+        <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?w=600" alt="Bruschetta" />
+        <div class="menu-card-body">
+          <span class="tag">Starters</span>
+          <h3>Bruschetta</h3>
+          <p>Toasted bread with fresh tomatoes, garlic &amp; basil drizzle.</p>
+          <div class="dish-footer">
+            <span class="price">$7.99</span>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="starters">
+        <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=600" alt="Chicken Wings" />
+        <div class="menu-card-body">
+          <span class="tag">Starters</span>
+          <h3>Crispy Chicken Wings</h3>
+          <p>Golden wings tossed in smoky BBQ or buffalo sauce.</p>
+          <div class="dish-footer">
+            <span class="price">$9.99</span>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mains -->
+      <div class="menu-card" data-cat="mains">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600" alt="Gourmet Burger" />
+        <div class="menu-card-body">
+          <span class="tag">Mains</span>
+          <h3>Gourmet Burger</h3>
+          <p>Juicy beef patty with caramelised onions &amp; truffle mayo.</p>
+          <div class="dish-footer">
+            <span class="price">$12.99</span>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="mains">
+        <img src="https://images.unsplash.com/photo-1432139509613-5c4255815697?w=600" alt="Grilled Salmon" />
+        <div class="menu-card-body">
+          <span class="tag">Mains</span>
+          <h3>Grilled Salmon</h3>
+          <p>Pan-seared salmon fillet with lemon butter sauce &amp; asparagus.</p>
+          <div class="dish-footer">
+            <span class="price">$18.99</span>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="mains">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600" alt="Pasta Carbonara" />
+        <div class="menu-card-body">
+          <span class="tag">Mains</span>
+          <h3>Pasta Carbonara</h3>
+          <p>Classic creamy pasta with crispy pancetta &amp; parmesan.</p>
+          <div class="dish-footer">
+            <span class="price">$13.49</span>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pizza -->
+      <div class="menu-card" data-cat="pizza">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600" alt="Margherita" />
+        <div class="menu-card-body">
+          <span class="tag">Pizza</span>
+          <h3>Margherita</h3>
+          <p>Stone-baked with fresh mozzarella, basil &amp; tomato.</p>
+          <div class="dish-footer">
+            <span class="price">$14.99</span>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="pizza">
+        <img src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?w=600" alt="BBQ Chicken Pizza" />
+        <div class="menu-card-body">
+          <span class="tag">Pizza</span>
+          <h3>BBQ Chicken</h3>
+          <p>Smoky BBQ base with grilled chicken, red onion &amp; cheddar.</p>
+          <div class="dish-footer">
+            <span class="price">$16.49</span>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Salads -->
+      <div class="menu-card" data-cat="salads">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600" alt="Buddha Bowl" />
+        <div class="menu-card-body">
+          <span class="tag">Salads</span>
+          <h3>Buddha Bowl</h3>
+          <p>Colorful bowl with roasted veggies, quinoa &amp; tahini.</p>
+          <div class="dish-footer">
+            <span class="price">$11.49</span>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="salads">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600" alt="Caesar Salad" />
+        <div class="menu-card-body">
+          <span class="tag">Salads</span>
+          <h3>Caesar Salad</h3>
+          <p>Crisp romaine, croutons, parmesan &amp; classic Caesar dressing.</p>
+          <div class="dish-footer">
+            <span class="price">$10.49</span>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="menu-card" data-cat="desserts">
+        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600" alt="Lava Cake" />
+        <div class="menu-card-body">
+          <span class="tag">Desserts</span>
+          <h3>Chocolate Lava Cake</h3>
+          <p>Warm chocolate cake with a molten centre, served with vanilla ice cream.</p>
+          <div class="dish-footer">
+            <span class="price">$8.49</span>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="desserts">
+        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600" alt="Cheesecake" />
+        <div class="menu-card-body">
+          <span class="tag">Desserts</span>
+          <h3>New York Cheesecake</h3>
+          <p>Rich &amp; creamy classic cheesecake with berry compote.</p>
+          <div class="dish-footer">
+            <span class="price">$7.99</span>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drinks -->
+      <div class="menu-card" data-cat="drinks">
+        <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600" alt="Fresh Smoothie" />
+        <div class="menu-card-body">
+          <span class="tag">Drinks</span>
+          <h3>Fresh Smoothie</h3>
+          <p>Seasonal fruit blended with yoghurt &amp; honey.</p>
+          <div class="dish-footer">
+            <span class="price">$5.99</span>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="drinks">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600" alt="Espresso" />
+        <div class="menu-card-body">
+          <span class="tag">Drinks</span>
+          <h3>Espresso &amp; Lattes</h3>
+          <p>Single-origin specialty coffee, prepared to order.</p>
+          <div class="dish-footer">
+            <span class="price">$4.49</span>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Crux<span>Food</span></a>
+        <p>Crafting unforgettable dining experiences with the finest local ingredients since 2017.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">&#xf09a;</a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">&#xf16d;</a>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Twitter">&#xf099;</a>
+          <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">&#xf167;</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html#how-it-works">About Us</a></li>
+          <li><a href="contact.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Our Menu</h4>
+        <ul>
+          <li><a href="menu.html?filter=starters">Starters</a></li>
+          <li><a href="menu.html?filter=mains">Mains</a></li>
+          <li><a href="menu.html?filter=pizza">Pizza</a></li>
+          <li><a href="menu.html?filter=desserts">Desserts</a></li>
+          <li><a href="menu.html?filter=drinks">Drinks</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="https://maps.google.com/?q=42+Gourmet+Lane+New+York+NY+10001" target="_blank" rel="noopener">📍 42 Gourmet Lane, NY 10001</a></p>
+        <p><a href="tel:+15550123456">📞 +1 (555) 012-3456</a></p>
+        <p><a href="mailto:hello@cruxfood.com">✉️ hello@cruxfood.com</a></p>
+        <p>🕐 Mon–Sun: 10 AM – 11 PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 CruxFood. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="contact.html">Privacy Policy</a>
+        <a href="contact.html">Terms of Service</a>
+        <a href="contact.html">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

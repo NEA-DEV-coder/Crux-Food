@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crux Food – Fresh & Delicious</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a href="index.html" class="logo">Crux<span>Food</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Explore ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html#popular">🍽️ Popular Dishes</a></li>
+            <li><a href="index.html#how-it-works">🔍 How It Works</a></li>
+            <li><a href="index.html#testimonials">💬 Testimonials</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content" data-animate="fade-right">
+        <span class="badge">🍽️ Fresh Every Day</span>
+        <h1>Food Made With <span>Love &amp; Passion</span></h1>
+        <p>
+          Experience the finest flavors crafted from locally sourced
+          ingredients. From comforting classics to bold new creations — there's
+          something for everyone.
+        </p>
+        <div class="btn-group">
+          <a href="menu.html" class="btn btn-primary">Explore Menu</a>
+          <a href="contact.html" class="btn btn-outline">Reserve a Table</a>
+        </div>
+      </div>
+      <div class="hero-img" data-animate="fade-left">
+        <img
+          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800"
+          alt="Delicious food"
+        />
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+      <span class="section-label" data-animate="fade-up">Why Choose Us</span>
+      <h2 class="section-title" data-animate="fade-up">A Dining Experience Like No Other</h2>
+      <div class="features-grid" data-stagger>
+        <div class="feature-card">
+          <div class="feature-icon">🥗</div>
+          <h3>Fresh Ingredients</h3>
+          <p>
+            We source local, seasonal produce daily to ensure maximum flavor and
+            nutrition.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👨‍🍳</div>
+          <h3>Expert Chefs</h3>
+          <p>
+            Our award-winning chefs bring years of culinary expertise to every
+            plate.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3>Fast Delivery</h3>
+          <p>
+            Hot food delivered to your door in under 30 minutes, guaranteed.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⭐</div>
+          <h3>Top Rated</h3>
+          <p>
+            Loved by thousands of happy customers with a 4.9-star average
+            rating.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPULAR DISHES -->
+    <section class="popular" id="popular">
+      <span class="section-label" data-animate="fade-up">Most Loved</span>
+      <h2 class="section-title" data-animate="fade-up">Popular Dishes</h2>
+      <p class="section-subtitle" data-animate="fade-up">
+        Hand-picked favourites that keep our guests coming back for more.
+      </p>
+      <div class="dishes-grid" data-stagger>
+        <div class="dish-card">
+          <img
+            class="dish-img"
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600"
+            alt="Gourmet Burger"
+          />
+          <div class="dish-info">
+            <h3>Gourmet Burger</h3>
+            <p>Juicy beef patty with caramelised onions &amp; truffle mayo.</p>
+            <div class="dish-footer">
+              <span class="price">$12.99</span>
+              <button class="add-btn">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="dish-card">
+          <img
+            class="dish-img"
+            src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600"
+            alt="Margherita Pizza"
+          />
+          <div class="dish-info">
+            <h3>Margherita Pizza</h3>
+            <p>Stone-baked with fresh mozzarella, basil &amp; tomato sauce.</p>
+            <div class="dish-footer">
+              <span class="price">$14.99</span>
+              <button class="add-btn">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="dish-card">
+          <img
+            class="dish-img"
+            src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
+            alt="Buddha Bowl"
+          />
+          <div class="dish-info">
+            <h3>Buddha Bowl</h3>
+            <p>Colourful, nutrient-packed bowl with tahini dressing.</p>
+            <div class="dish-footer">
+              <span class="price">$11.49</span>
+              <button class="add-btn">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works" id="how-it-works">
+      <span class="section-label" data-animate="fade-up">Simple Process</span>
+      <h2 class="section-title" data-animate="fade-up">Order in 3 Easy Steps</h2>
+      <p class="section-subtitle" data-animate="fade-up">
+        From browse to bite — we make it effortless.
+      </p>
+      <div class="steps-grid" data-stagger>
+        <div class="step">
+          <div class="step-number">01</div>
+          <div class="step-icon">🔍</div>
+          <h3>Browse Our Menu</h3>
+          <p>
+            Explore dozens of freshly prepared dishes across every category and
+            find your favourites.
+          </p>
+        </div>
+        <div class="step-divider"></div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <div class="step-icon">🛒</div>
+          <h3>Place Your Order</h3>
+          <p>
+            Add items to your cart and check out in seconds with our simple,
+            secure ordering system.
+          </p>
+        </div>
+        <div class="step-divider"></div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <div class="step-icon">🚀</div>
+          <h3>Fast Delivery</h3>
+          <p>
+            Sit back and relax — your hot, fresh meal will arrive at your door
+            in under 30 minutes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+      <span class="section-label" data-animate="fade-up">What People Say</span>
+      <h2 class="section-title" data-animate="fade-up">Loved by Food Enthusiasts</h2>
+      <p class="section-subtitle" data-animate="fade-up">
+        Real words from real customers who keep coming back.
+      </p>
+      <div class="testimonials-grid" data-stagger>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="review">
+            "The Gourmet Burger is absolutely incredible. Juicy, flavourful and
+            delivered piping hot. Best burger in the city, no contest!"
+          </p>
+          <div class="reviewer">
+            <img src="https://i.pravatar.cc/48?img=11" alt="Sarah" />
+            <div>
+              <strong>Sarah Mitchell</strong>
+              <span>Food Blogger</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="review">
+            "We catered our office lunch through CruxFood and the team was blown
+            away. Fresh, plentiful, and every single dish was amazing."
+          </p>
+          <div class="reviewer">
+            <img src="https://i.pravatar.cc/48?img=32" alt="James" />
+            <div>
+              <strong>James Thornton</strong>
+              <span>Marketing Director</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="review">
+            "The Buddha Bowl has become my weekly go-to. Super healthy,
+            beautifully presented, and honestly better than anything I could
+            make myself."
+          </p>
+          <div class="reviewer">
+            <img src="https://i.pravatar.cc/48?img=47" alt="Priya" />
+            <div>
+              <strong>Priya Sharma</strong>
+              <span>Nutritionist</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="stats-grid">
+        <div class="stat">
+          <h2 data-target="12000" data-suffix="+">0</h2>
+          <p>Happy Customers</p>
+        </div>
+        <div class="stat">
+          <h2 data-target="85" data-suffix="+">0</h2>
+          <p>Menu Items</p>
+        </div>
+        <div class="stat">
+          <h2 data-target="15" data-suffix="">0</h2>
+          <p>Expert Chefs</p>
+        </div>
+        <div class="stat">
+          <h2 data-target="8" data-suffix=" yrs">0</h2>
+          <p>Years of Excellence</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+      <div class="newsletter-inner">
+        <div>
+          <span class="section-label">Stay Updated</span>
+          <h2>Get Exclusive Deals & New Dishes First</h2>
+          <p>Subscribe to our newsletter and enjoy 10% off your next order.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Enter your email address" required />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Crux<span>Food</span></a>
+          <p>
+            Crafting unforgettable dining experiences with the finest local
+            ingredients since 2017.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook"
+              >&#xf09a;</a
+            >
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+              >&#xf16d;</a
+            >
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="Twitter"
+              >&#xf099;</a
+            >
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="YouTube"
+              >&#xf167;</a
+            >
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#how-it-works">About Us</a></li>
+            <li><a href="contact.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Our Menu</h4>
+          <ul>
+            <li><a href="menu.html?filter=starters">Starters</a></li>
+            <li><a href="menu.html?filter=mains">Mains</a></li>
+            <li><a href="menu.html?filter=pizza">Pizza</a></li>
+            <li><a href="menu.html?filter=desserts">Desserts</a></li>
+            <li><a href="menu.html?filter=drinks">Drinks</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>
+            <a
+              href="https://maps.google.com/?q=42+Gourmet+Lane+New+York+NY+10001"
+              target="_blank"
+              rel="noopener"
+              >📍 42 Gourmet Lane, NY 10001</a
+            >
+          </p>
+          <p><a href="tel:+15550123456">📞 +1 (555) 012-3456</a></p>
+          <p><a href="mailto:hello@cruxfood.com">✉️ hello@cruxfood.com</a></p>
+          <p>🕐 Mon–Sun: 10 AM – 11 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 CruxFood. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Terms of Service</a>
+          <a href="contact.html">Cookie Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

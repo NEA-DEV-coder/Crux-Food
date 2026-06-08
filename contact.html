@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact – Crux Food</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a href="index.html" class="logo">Crux<span>Food</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Explore ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html#popular">🍽️ Popular Dishes</a></li>
+            <li><a href="index.html#how-it-works">🔍 How It Works</a></li>
+            <li><a href="index.html#testimonials">💬 Testimonials</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- CONTACT HERO -->
+    <div class="contact-hero">
+      <h1>Get In Touch</h1>
+      <p>
+        We'd love to hear from you — reservations, feedback, or just saying hi!
+      </p>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <section>
+      <div class="contact-grid">
+        <!-- INFO -->
+        <div class="contact-info" data-animate="fade-right">
+          <h2>Visit or Reach Us</h2>
+          <p>
+            Whether you want to reserve a table, place a catering order, or
+            simply ask a question, our team is ready to help.
+          </p>
+
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div>
+              <h4>Address</h4>
+              <p>
+                <a
+                  href="https://maps.google.com/?q=42+Gourmet+Lane+New+York+NY+10001"
+                  target="_blank"
+                  rel="noopener"
+                  >42 Gourmet Lane, Downtown<br />New York, NY 10001</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+15550123456">+1 (555) 012-3456</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:hello@cruxfood.com">hello@cruxfood.com</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">🕐</div>
+            <div>
+              <h4>Opening Hours</h4>
+              <p>Mon–Fri: 11 AM – 10 PM<br />Sat–Sun: 10 AM – 11 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="contact-form" data-animate="fade-left">
+          <h2>Send Us a Message</h2>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="Ebuka" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Nwafor" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="ebuka@example.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject">
+                <option value="">Select a topic…</option>
+                <option>Table Reservation</option>
+                <option>Catering Enquiry</option>
+                <option>Feedback</option>
+                <option>General Question</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                placeholder="Write your message here…"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message →</button>
+            <div id="successMsg" class="success-msg">
+              ✅ Message sent! We'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP EMBED -->
+    <div style="width: 100%; height: 320px; filter: grayscale(20%)">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2412634994896!2d-73.98784368459418!3d40.74881797932814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+        width="100%"
+        height="320"
+        style="border: 0"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Restaurant Location"
+      >
+      </iframe>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Crux<span>Food</span></a>
+          <p>
+            Crafting unforgettable dining experiences with the finest local
+            ingredients since 2017.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook"
+              >&#xf09a;</a
+            >
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+              >&#xf16d;</a
+            >
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="Twitter"
+              >&#xf099;</a
+            >
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="YouTube"
+              >&#xf167;</a
+            >
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#how-it-works">About Us</a></li>
+            <li><a href="contact.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Our Menu</h4>
+          <ul>
+            <li><a href="menu.html?filter=starters">Starters</a></li>
+            <li><a href="menu.html?filter=mains">Mains</a></li>
+            <li><a href="menu.html?filter=pizza">Pizza</a></li>
+            <li><a href="menu.html?filter=desserts">Desserts</a></li>
+            <li><a href="menu.html?filter=drinks">Drinks</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>
+            <a
+              href="https://maps.google.com/?q=42+Gourmet+Lane+New+York+NY+10001"
+              target="_blank"
+              rel="noopener"
+              >📍 42 Gourmet Lane, NY 10001</a
+            >
+          </p>
+          <p><a href="tel:+15550123456">📞 +1 (555) 012-3456</a></p>
+          <p><a href="mailto:hello@cruxfood.com">✉️ hello@cruxfood.com</a></p>
+          <p>🕐 Mon–Sun: 10 AM – 11 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 CruxFood. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Terms of Service</a>
+          <a href="contact.html">Cookie Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
