@@ -1,0 +1,106 @@
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    flex-direction: column;
+    padding: 1.5rem 6%;
+    gap: 1.2rem;
+    box-shadow: var(--shadow);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  /* dropdown becomes inline in mobile menu */
+  .dropdown-menu {
+    position: static;
+    transform: none;
+    box-shadow: none;
+    border-radius: 10px;
+    background: var(--light);
+    padding: 0.25rem 0;
+    margin-top: 0.4rem;
+    opacity: 1;
+    pointer-events: all;
+    display: none;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu::before {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    min-height: auto;
+    padding: 4rem 6%;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .btn-group {
+    justify-content: center;
+  }
+
+  .hero-img {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .hero-img img {
+    height: 320px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .step-divider {
+    display: none;
+  }
+  .steps-grid {
+    flex-direction: column;
+  }
+
+  .newsletter-inner {
+    flex-direction: column;
+  }
+  .newsletter-form {
+    width: 100%;
+    flex-direction: column;
+  }
+  .newsletter-form input {
+    width: 100%;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
